@@ -24,11 +24,13 @@
         android:orientation="horizontal"
         android:layout_marginBottom="30dp">
         <ImageButton
+            android:id="@+id/menu01"
             android:layout_width="190dp"
             android:layout_height="135dp"
             android:src="@drawable/menu01"
             />
         <ImageButton
+            android:id="@+id/menu02"
             android:layout_width="190dp"
             android:layout_height="135dp"
             android:src="@drawable/menu02" />
@@ -38,10 +40,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageButton
+            android:id="@+id/menu03"
             android:layout_width="190dp"
             android:layout_height="135dp"
             android:src="@drawable/menu03" />
         <ImageButton
+            android:id="@+id/menu04"
             android:layout_width="190dp"
             android:layout_height="135dp"
             android:src="@drawable/menu04" />
