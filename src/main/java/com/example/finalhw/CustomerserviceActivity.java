@@ -133,6 +133,8 @@ public class CustomerserviceActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.cart) {
             Toast.makeText(getApplicationContext(), "장바구니 메뉴가 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, CartActivity.class);
+            startActivity(intent);
             return true;
         } return super.onOptionsItemSelected(item);
     }

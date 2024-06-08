@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prac3">
         <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".MypageActivity"
             android:exported="false" />
         <activity
