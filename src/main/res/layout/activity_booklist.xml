@@ -32,5 +32,281 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TableRow
+                android:layout_marginTop="2dp">
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/book11" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="자바 코딩의 기술"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현장에서 뽑은 70가지 예제로 배우는 코드 잘 짜는 법"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₩22,000"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="264쪽"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사이먼 하러, 리누스 디에츠, 요르그 레너드, 심지현"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020.07.30"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                </TableLayout>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/book21" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="머신 러닝을 다루는 기술"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="with 파이썬"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₩34,000"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="624쪽"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="마크 페너, 황준식"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020.04.20"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                </TableLayout>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/book31" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="모던 리눅스 관리"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="그림으로 이해하고 만들면서 익히는"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₩30,000"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="472쪽"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="데이비드 클린턴(David Cliton), 강석주"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2010.10.10"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                </TableLayout>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/book41" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="유니티 교과서"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이공계를 위한 프로그래밍 자료구조 알고리즘"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₩28,000"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="456쪽"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기타무라 마나미, 김은철, 유세라"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2010.10.30"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="40dp" />
+                </TableLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:visibility="gone">
+            <TableRow>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/book11" />
+                    <TextView
+                        android:text="정가 : 22,000원"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/book21" />
+                    <TextView
+                        android:text="정가 : 34,000원"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+            </TableRow>
+            <TableRow>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/book31" />
+                    <TextView
+                        android:text="정가 : 30,000원"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/book41" />
+                    <TextView
+                        android:text="정가 : 28,000원"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"/>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+    </FrameLayout>
+
 
 </LinearLayout>

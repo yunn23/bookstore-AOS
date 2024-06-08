@@ -6,6 +6,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TableLayout;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class BooklistActivity extends AppCompatActivity {
 
     private ImageView list1, list2;
+    private TableLayout table1, table2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +31,15 @@ public class BooklistActivity extends AppCompatActivity {
 
         list1 = findViewById(R.id.list1);
         list2 = findViewById(R.id.list2);
+        table1 = findViewById(R.id.table1);
+        table2 = findViewById(R.id.table2);
         list1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 list1.setImageResource(R.drawable.list_type1);
                 list2.setImageResource(R.drawable.list_type22);
+                table1.setVisibility(View.VISIBLE);
+                table2.setVisibility(View.GONE);
             }
         });
 
@@ -42,6 +48,8 @@ public class BooklistActivity extends AppCompatActivity {
             public void onClick(View v) {
                 list1.setImageResource(R.drawable.list_type12);
                 list2.setImageResource(R.drawable.list_type2);
+                table1.setVisibility(View.GONE);
+                table2.setVisibility(View.VISIBLE);
             }
         });
 
