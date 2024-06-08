@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean isCover01 = true;
     private ImageButton menu01, menu02, menu03, menu04;
 
+    String id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         if (username.getText().toString().trim().length() > 0 && password.getText().toString().trim().length() > 0) {
-                            Toast.makeText(getApplicationContext(), "로그인 성공!  " + username.getText() + "님 환영합니다", Toast.LENGTH_SHORT).show();
+                            id = String.valueOf(username.getText());
+                            Toast.makeText(getApplicationContext(), "로그인 성공!  " + id + "님 환영합니다", Toast.LENGTH_SHORT).show();
                             loginDialog.dismiss();
                         } else {
                             Toast.makeText(getApplicationContext(), "올바른 정보를 입력하세요", Toast.LENGTH_SHORT).show();
@@ -112,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "마이페이지 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MypageActivity.class);
+                intent.putExtra("ID", id);
+                startActivity(intent);
 
             }
         });

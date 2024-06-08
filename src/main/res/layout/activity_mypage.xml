@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#3284FF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DAE9FF"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/person" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ooo 님"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일반회원"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문 및 배송"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/mymenu01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mymenu01"
+            android:scaleType="fitCenter"
+            android:padding="0dp"/>
+        <ImageButton
+            android:id="@+id/mymenu02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mymenu02"
+            android:scaleType="fitCenter"
+            android:padding="0dp"/>
+        <ImageButton
+            android:id="@+id/mymenu03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mymenu03"
+            android:scaleType="fitCenter"
+            android:padding="0dp"/>
+        <ImageButton
+            android:id="@+id/mymenu04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mymenu04"
+            android:scaleType="fitCenter"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="진행 중인 주문내역"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/order" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="최근 1개월간 주문내역이 없습니다."
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="최근 본 상품"
+        android:backgroundTint="#4A9DFF"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:backgroundTint="#C2C2C2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="3dp"/>
+
+
+</LinearLayout>
