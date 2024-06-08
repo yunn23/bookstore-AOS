@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "고객센터 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CustomerserviceActivity.class);
+                startActivity(intent);
             }
         });
 
