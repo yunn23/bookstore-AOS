@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         menu01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "도서목록 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, BooklistActivity.class);
                 startActivity(intent);
             }
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         menu02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(getApplicationContext(), "로그인 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         menu03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(getApplicationContext(), "고객센터 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         menu04.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "마이페이지 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
 
             }
         });
