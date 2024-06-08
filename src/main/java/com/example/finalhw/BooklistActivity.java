@@ -1,5 +1,6 @@
 package com.example.finalhw;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -7,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableLayout;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -67,10 +69,16 @@ public class BooklistActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if ( id == R.id.home) {
+            Toast.makeText(getApplicationContext(), "홈으로 메뉴가 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             return true;
         } else if (id == R.id.booklist) {
+            Toast.makeText(getApplicationContext(), "도서목록 메뉴가 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+            // 이미 도서목록 화면에 있으므로 화면 이동 구현 안 함
             return true;
         } else if (id == R.id.cart) {
+            Toast.makeText(getApplicationContext(), "장바구니 메뉴가 클릭되었습니다.", Toast.LENGTH_SHORT).show();
             return true;
         } return super.onOptionsItemSelected(item);
     }
