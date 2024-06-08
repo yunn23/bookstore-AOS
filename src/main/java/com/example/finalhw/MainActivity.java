@@ -1,10 +1,13 @@
 package com.example.finalhw;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -58,6 +61,35 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "로그인 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show();
+
+                final Dialog loginDialog = new Dialog(MainActivity.this);
+                loginDialog.setContentView(R.layout.login_dialog);
+                loginDialog.setTitle("로그인 화면");
+                loginDialog.show();
+
+                Button login = loginDialog.findViewById(R.id.login);
+                Button cancel = loginDialog.findViewById(R.id.cancel);
+                final EditText username = loginDialog.findViewById(R.id.username);
+                final EditText password = loginDialog.findViewById(R.id.password);
+
+                login.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (username.getText().toString().trim().length() > 0 && password.getText().toString().trim().length() > 0) {
+                            Toast.makeText(getApplicationContext(), "로그인 성공!  " + username.getText() + "님 환영합니다", Toast.LENGTH_SHORT).show();
+                            loginDialog.dismiss();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "올바른 정보를 입력하세요", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        loginDialog.dismiss();
+                    }
+                });
             }
         });
 
