@@ -4,6 +4,298 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="장바구니"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#3284FF"
+        android:layout_marginBottom="10dp"/>
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TableRow
+            android:layout_marginTop="2dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:src="@drawable/cartbook01"
+                android:scaleType="fitXY"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[도서] 밤의 사색"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10,350원"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6/12(수) 도착예정"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:id="@+id/count01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_marginHorizontal="20dp" />
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0" />
+                    <CheckBox
+                        android:id="@+id/check01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"/>
+
+                </LinearLayout>
+
+
+            </TableLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:src="@drawable/cartbook02"
+                android:scaleType="fitXY"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[도서] 모순"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11,700원"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6/14(금) 도착예정"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:id="@+id/count02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_marginHorizontal="20dp" />
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0" />
+                    <CheckBox
+                        android:id="@+id/check02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"/>
+
+                </LinearLayout>
+
+
+            </TableLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:src="@drawable/cartbook03"
+                android:scaleType="fitXY"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[도서] 수레바퀴 아래서"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7,200원"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6/12(수) 도착예정"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:id="@+id/count03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_marginHorizontal="20dp" />
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0" />
+                    <CheckBox
+                        android:id="@+id/check03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"/>
+
+                </LinearLayout>
+
+
+            </TableLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:src="@drawable/book21"
+                android:scaleType="fitXY"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[도서] 머신러닝을 다루는 기술"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="34,000원"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6/18(화) 도착예정"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:id="@+id/count04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_marginHorizontal="20dp" />
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:padding="0dp"
+                        android:backgroundTint="#A0A0A0" />
+                    <CheckBox
+                        android:id="@+id/check04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"/>
+
+                </LinearLayout>
+
+
+            </TableLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하기"
+        android:backgroundTint="#4A9DFF"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp" />
 
 
 </LinearLayout>
