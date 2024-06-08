@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prac3">
         <activity
+            android:name=".BooklistActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
