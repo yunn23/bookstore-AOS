@@ -3,6 +3,7 @@ package com.example.finalhw;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageView coverImage;
     private boolean isCover01 = true;
     private ImageButton menu01, menu02, menu03, menu04;
+
+    private static final String PrefsName = "AppPrefs";
+    private static final String UserId = "ID";
 
     String id;
 
@@ -79,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         if (username.getText().toString().trim().length() > 0 && password.getText().toString().trim().length() > 0) {
                             id = String.valueOf(username.getText());
+
+                            SharedPreferences prefs = getSharedPreferences(PrefsName, MODE_PRIVATE);
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString(UserId, id);
+                            editor.apply();
+
                             Toast.makeText(getApplicationContext(), "로그인 성공!  " + id + "님 환영합니다", Toast.LENGTH_SHORT).show();
                             loginDialog.dismiss();
                         } else {
@@ -121,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
     }
 }
