@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +23,14 @@ public class MypageActivity extends AppCompatActivity {
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("기말프로젝트");
+        }
+
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("ID");
+
+        if (id != null) {
+            TextView username = findViewById(R.id.id);
+            username.setText(id);
         }
     }
 
