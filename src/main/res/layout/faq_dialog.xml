@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:layout_gravity="center"
+    android:background="@drawable/faq_dialog_border">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1:1 문의하기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+    <EditText
+        android:id="@+id/username"
+        android:hint="username"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical">
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/faqok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:layout_weight="0.5"
+            android:backgroundTint="#3A89FF"
+            android:layout_marginRight="2dp"/>
+        <Button
+            android:id="@+id/faqcancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:layout_weight="0.5"
+            android:backgroundTint="#3A89FF"
+            android:layout_marginLeft="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
