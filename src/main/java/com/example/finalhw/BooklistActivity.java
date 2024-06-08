@@ -5,6 +5,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -15,16 +16,34 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class BooklistActivity extends AppCompatActivity {
 
-    View view;
+    private ImageView list1, list2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booklist);
 
-        view = findViewById(R.id.layout);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("기말프로젝트");
+        }
 
+        list1 = findViewById(R.id.list1);
+        list2 = findViewById(R.id.list2);
+        list1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                list1.setImageResource(R.drawable.list_type1);
+                list2.setImageResource(R.drawable.list_type22);
+            }
+        });
 
+        list2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                list1.setImageResource(R.drawable.list_type12);
+                list2.setImageResource(R.drawable.list_type2);
+            }
+        });
 
     }
 
@@ -47,4 +66,6 @@ public class BooklistActivity extends AppCompatActivity {
             return true;
         } return super.onOptionsItemSelected(item);
     }
+
+
 }
