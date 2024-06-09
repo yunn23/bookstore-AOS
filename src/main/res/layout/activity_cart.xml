@@ -231,7 +231,7 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="110dp"
-                android:src="@drawable/book21"
+                android:src="@drawable/book31"
                 android:scaleType="fitXY"/>
             <TableLayout
                 android:layout_width="match_parent"
@@ -240,13 +240,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="[도서] 머신러닝을 다루는 기술"
+                    android:text="[도서] 모던 리눅스 관리"
                     android:textStyle="bold"
                     android:layout_marginLeft="40dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="34,000원"
+                    android:text="30,000원"
                     android:textStyle="bold"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="2dp"/>

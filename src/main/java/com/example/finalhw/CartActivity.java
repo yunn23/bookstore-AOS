@@ -22,6 +22,8 @@ public class CartActivity extends AppCompatActivity {
 
     private int[] counts = {1, 1, 1, 1};
     private TextView[] countTexts;
+    private CheckBox[] checkBoxes;
+    private String[] bookTitles = {"밤의 사색", "모순", "수레바퀴 아래서", "모던 리눅스 관리"};
 
 
     @Override
@@ -52,6 +54,13 @@ public class CartActivity extends AppCompatActivity {
                 findViewById(R.id.increase02),
                 findViewById(R.id.increase03),
                 findViewById(R.id.increase04)
+        };
+
+        checkBoxes = new CheckBox[] {
+                findViewById(R.id.check01),
+                findViewById(R.id.check02),
+                findViewById(R.id.check03),
+                findViewById(R.id.check04)
         };
 
 
@@ -85,6 +94,24 @@ public class CartActivity extends AppCompatActivity {
                 final Dialog orderDialog = new Dialog(CartActivity.this);
                 orderDialog.setContentView(R.layout.order_dialog);
                 orderDialog.setTitle("주문창 화면");
+
+                TextView orderContent = orderDialog.findViewById(R.id.orderContent);
+                StringBuilder contentBuilder = new StringBuilder();
+
+                for (int i = 0; i < checkBoxes.length; i++) {
+                    if (checkBoxes[i].isChecked()) {
+                        contentBuilder.append(bookTitles[i])
+                                .append("   ")
+                                .append(counts[i])
+                                .append("권\n");
+                    }
+                }
+
+                if (contentBuilder.length() == 0) {
+                    contentBuilder.append("선택된 항목이 없습니다.");
+                }
+
+                orderContent.setText(contentBuilder.toString());
                 orderDialog.show();
 
                 Button orderok = orderDialog.findViewById(R.id.orderok);
