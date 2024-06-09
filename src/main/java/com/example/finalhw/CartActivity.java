@@ -1,5 +1,6 @@
 package com.example.finalhw;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,6 +54,7 @@ public class CartActivity extends AppCompatActivity {
                 findViewById(R.id.increase04)
         };
 
+
         for (int i = 0; i < increaseButtons.length; i++) {
             final int index = i;
 
@@ -73,6 +76,34 @@ public class CartActivity extends AppCompatActivity {
                 }
             });
         }
+
+        Button orderButton = findViewById(R.id.orderButton);
+        orderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "주문창이 열립니다.", Toast.LENGTH_SHORT).show();
+                final Dialog orderDialog = new Dialog(CartActivity.this);
+                orderDialog.setContentView(R.layout.order_dialog);
+                orderDialog.setTitle("주문창 화면");
+                orderDialog.show();
+
+                Button orderok = orderDialog.findViewById(R.id.orderok);
+                Button ordercancel = orderDialog.findViewById(R.id.ordercancel);
+                orderok.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(), "주문되었습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                ordercancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(), "주문창이 닫힙니다.", Toast.LENGTH_SHORT).show();
+                        orderDialog.dismiss();
+                    }
+                });
+            }
+        });
 
 
     }
