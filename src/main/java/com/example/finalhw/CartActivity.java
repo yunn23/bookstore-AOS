@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +18,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class CartActivity extends AppCompatActivity {
 
+    private int[] counts = {1, 1, 1, 1};
+    private TextView[] countTexts;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,50 @@ public class CartActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("기말프로젝트");
         }
+
+        countTexts = new TextView[] {
+                findViewById(R.id.count01),
+                findViewById(R.id.count02),
+                findViewById(R.id.count03),
+                findViewById(R.id.count04)
+        };
+
+        Button[] decreaseButtons = new Button[] {
+                findViewById(R.id.decrease01),
+                findViewById(R.id.decrease02),
+                findViewById(R.id.decrease03),
+                findViewById(R.id.decrease04),
+        };
+
+        Button[] increaseButtons = new Button[] {
+                findViewById(R.id.increase01),
+                findViewById(R.id.increase02),
+                findViewById(R.id.increase03),
+                findViewById(R.id.increase04)
+        };
+
+        for (int i = 0; i < increaseButtons.length; i++) {
+            final int index = i;
+
+            decreaseButtons[i]. setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (counts[index] > 1) {
+                        counts[index]--;
+                        countTexts[index].setText(String.valueOf(counts[index]));
+                    }
+                }
+            });
+
+            increaseButtons[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    counts[index]++;
+                    countTexts[index].setText(String.valueOf(counts[index]));
+                }
+            });
+        }
+
 
     }
 

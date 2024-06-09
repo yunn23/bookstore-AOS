@@ -58,6 +58,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="3dp">
                     <Button
+                        android:id="@+id/decrease01"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="-"
@@ -71,6 +72,7 @@
                         android:text="1"
                         android:layout_marginHorizontal="20dp" />
                     <Button
+                        android:id="@+id/increase01"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="+"
@@ -124,6 +126,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="3dp">
                     <Button
+                        android:id="@+id/decrease02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="-"
@@ -137,6 +140,7 @@
                         android:text="1"
                         android:layout_marginHorizontal="20dp" />
                     <Button
+                        android:id="@+id/increase02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="+"
@@ -190,6 +194,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="3dp">
                     <Button
+                        android:id="@+id/decrease03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="-"
@@ -203,6 +208,7 @@
                         android:text="1"
                         android:layout_marginHorizontal="20dp" />
                     <Button
+                        android:id="@+id/increase03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="+"
@@ -257,6 +263,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="3dp">
                     <Button
+                        android:id="@+id/decrease04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="-"
@@ -270,6 +277,7 @@
                         android:text="1"
                         android:layout_marginHorizontal="20dp" />
                     <Button
+                        android:id="@+id/increase04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:text="+"
