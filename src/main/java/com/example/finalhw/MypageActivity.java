@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +38,28 @@ public class MypageActivity extends AppCompatActivity {
             TextView username = findViewById(R.id.id);
             username.setText(id);
         }
+
+        Button recentButton = findViewById(R.id.recentButton);
+        recentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "최근 본 상품 버튼을 클릭했습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button logoutButton = findViewById(R.id.logoutButton);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "로그아웃 합니다.", Toast.LENGTH_SHORT).show();
+                SharedPreferences prefs = getSharedPreferences(PrefsName, MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putString(UserId, "ooo");
+                editor.apply();
+                Intent intent = new Intent(MypageActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
